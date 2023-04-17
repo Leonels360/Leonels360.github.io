@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <link rel="shortcut icon" href="Man.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function validate(){
+        var comments = document.feedback.answers.value;
+        if(comments=="")
+        {
+          alert("Please Enter something")
+        }
+        else{
+          alert("Form submitted succesfully")
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+     <div class="heading">
+       <h1>Pc, Console or Mobile Gaming </h1>
+     </div>
+     <u1 class="nav-bar">
+       <li><a href="index.html" class="active">Home</a></li>
+       <li><a href="Pc.html">Pc</a></li>
+       <li><a href="Console.html">Console</a></li>
+       <li><a href="Mobile.html">Mobile</a></li>
+     </u1>
+   </header>
+
+    <div class="bd1">
+      <p>Its always been a quetion of which is better pc or console.<br/> However In recent years, mobile gaming has exploded into the scene</p>
+      <p>Lets take a look at what they are and what they offer</p>
+    </div>
+
+    <table class="bdtable">
+
+      <tr>
+        <td><img src="pcmgaming.webp"   width="535" height="360" align="center"> </td>
+        <td>Video games are large industry and cover three main markets. They are console, pc, and mobile. </td>
+      </tr>
+    </table>
+
+    <div class="content">
+      <form name="feedback">
+        <table>
+          <tr>
+            <td><label>Tell us which is your favorite and why?</label></td>
+            <td><input type="text" name="answers"></br></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center"><input type="button" value="submit" onclick="validate();"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+
+    <footer>
+    Copyright &copy; Leonel Saenz
+    </footer>
+  </body>
+</html>
